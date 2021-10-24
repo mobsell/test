@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+body {
+  color: #2B2B2B;
+  font-size: 20px;
+  font-family: "Hiragino Mincho ProN", serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style :none;
+}
+
+h3 {
+  border-bottom: 1px solid #2B2B2B;
+  padding-bottom:10px;
+  margin-bottom: 30px;
+}
+
+h4 {
+  text-align: right;
+  padding: 0 30px 10px 0;
+}
+
+.content {
+  border: 1px solid #2B2B2B;
+  padding: 30px;
+}
+
+/* 共通 */
+
+header {
+  height: 75px;
+  background-color:#0A1C3D;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-bottom: 150px;
+}
+
+header img {
+  width: 250px;
+  margin-top: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+}
+
+header li a {
+  color: white;
+  padding: 25px;
+  line-height: 75px;
+  transition: 0.5s all;
+  opacity: 0.8;
+}
+
+header li a:hover {
+  background-color: rgb(255, 255, 255, 0.8);
+  color: #0A1C3D;
+}
+/* header */
+
+main {
+  padding: 0 200px;
+  margin-bottom: 150px;
+}
+
+.greed {
+  margin-bottom: 100px;
+}
+
+.content h4 {
+  font-weight: normal;
+}
+
+.company dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company dl dt {
+  width: 25%;
+  padding: 10px 0;
+}
+
+
+.company dl dd {
+  width: 75%;
+  padding: 10px 0;
+}
+
+/* main */
+
+footer p {
+  text-align: right;
+  padding: 10px 200px 10px 0;
+  font-size: 10px;
+}
+
+/* footer */
+
+/* レスポンシブデザイン */
+
+@media screen and (max-width: 1000px) { 
+
+  body {
+    font-size: 10px;
+  }
+
+  header {
+    height: 50px;
+    background-image: none;
+    padding: 0 5px;
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    padding-top: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    line-height: 30px;
+    color: #182043;
+  }
+  
+  header img {
+    margin-top: 20px;
+    width: 120px;
+  }
+
+  header ul {
+    display: flex;
+  }
+  
+  header li {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  header li a {
+    padding: 15px 5px;
+    font-size: 12px;
+    line-height: 50px;
+  }
+
+  /* header */
+
+  main {
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
+
+  .greed {
+    margin-bottom: 30px;
+
+  }
+  /* contents */
+
+  footer p {
+    padding: 10px 10px;
+    font-size: 8px;
+  }
+
+  /* footer */
+
+}
